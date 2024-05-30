@@ -1,0 +1,128 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background: url('maldives3.jpg') no-repeat center center/cover;
+    padding: 20px;
+}
+
+.header {
+    background: url('maldives.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.description, .attractions, .gallery {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    background-image: url('maldives7.jpg');
+}
+
+.description h2, .attractions h2, .gallery h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #333;
+}
+
+.description p {
+    font-weight: 900;
+    color: rgb(9, 79, 93);
+}
+
+.description p, .attractions ul {
+    font-size: 18px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(86, 196, 226);
+}
+
+.image-container {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.attractions ul {
+    list-style: none;
+}
+
+.attractions {
+    background-color: skyblue;
+}
+
+.attractions li {
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.attractions li:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 100%;
+    }
+}
